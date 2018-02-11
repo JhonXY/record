@@ -1,0 +1,9 @@
+netstat -ano|findstr xxx(接口号)
+获取到指定接口处正在执行的进程的uid（LISTENING后的值）
+
+taskkill /pid xxx(该进程的pid)
+通过该pid来杀死该进程
+
+
+如若无法终止，则带上f参数
+taskkill /f /pid xxx(pid)

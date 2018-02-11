@@ -1,0 +1,17 @@
+
+a instanceof b
+
+instanceof用来检查a的原型链上是否存在原型b，
+所以instance可以区分数组， null 和普通对象。
+
+但是instance却对基础类型的判断有问题
+
+instanceof Number  // return false
+
+var num = new Number('5')
+
+num instanceof Number // return true
+
+'' instanceof String  // return false
+
+只有通过new出来的基础类型才能通过instanceof的判断

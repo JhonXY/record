@@ -1,0 +1,1 @@
+number, string, boolean, function, undefined, object, symbol( typeof不能区分出数组，null和普通对象 )
