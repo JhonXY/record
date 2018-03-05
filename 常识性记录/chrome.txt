@@ -1,2 +1,19 @@
-重启
+1.重启
 chrome://restart
+
+
+2.利用chrome来调试node
+
+node --inspect app.js
+
+node --inspect-brk app.js
+在第一行就停下
+
+获取如下的输出
+Debugger listening on ws://127.0.0.1:9229/4dc825ec-a204-46f8-8edc-4afadc8da61a
+For help see https://nodejs.org/en/docs/inspector
+
+chrome中打开
+chrome://inspect/#devices
+
+可以看到正在调试的node
